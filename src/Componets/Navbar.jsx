@@ -13,7 +13,7 @@ const Navbar = () => {
                 alt="logo"
               />
 
-              <div className="text-white text-xs lg:text-base space-x-2 flex xl:space-x-5 my-auto">
+              <div className="text-white text-xs  lg:text-base space-x-2 flex lg:space-x-5 my-auto">
                 <button className="lg:p-2 px-2 p-1 border-primary whitespace-nowrap border-[1px] rounded-md">
                   About us
                 </button>
@@ -24,14 +24,14 @@ const Navbar = () => {
             </div>
 
             <div className="text-white text-xs lg:text-base my-2 flex space-x-2 lg:space-x-4">
-              {/* Hidden in mobile view, visible from lg and above */}
+             
               <button className="hidden lg:block p-2 whitespace-nowrap bg-primary rounded-md">
                 Apply Now
               </button>
               <button className="lg:p-2 py-1 px-2 border-primary whitespace-nowrap border-[1px] rounded-md">
                 Login
               </button>
-              <button className="lg:p-2 px-2 border bg-primary whitespace-nowrap rounded-md">
+              <button className="lg:p-2 px-2  bg-primary whitespace-nowrap rounded-md">
                 Sign Up
               </button>
             </div>
