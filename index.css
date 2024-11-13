@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+/* @import url("../../excalidraw/packages/excalidraw/dist/dev/index.css"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** island bar css overrides start**/
+.HintViewer {
+  display: none !important;
+}
+
+.ToolIcon__lock {
+  display: none !important;
+}
+
+.App-toolbar__extra-tools-trigger {
+  display: none !important;
+}
+
+.ToolIcon__keybinding {
+  display: none !important;
+}
+
+label[title="Ellipse — O or 4"] {
+  position: absolute;
+  top: 2px;
+}
+
+label[title="Arrow — A or 5"],
+label[title="Diamond — D or 3"],
+label[title="Rectangle — R or 2"] {
+  display: none !important; /* Hides the label element */
+}
+
+/** island bar css overrides end**/
+
+/** hide floating toolbar **/
+.excalidraw .App-menu__left {
+  display: none !important;
+}
+
+.mobile-misc-tools-container {
+  display: none !important;  
+}
+
+.flexible-modal {
+  width: 773px !important;
+  height: 688px !important;
+  padding: 15px !important;
+  margin: auto !important;
+  /* margin-top: 3%; */
+  z-index: 90 !important;
+  background-color: white;
+  top: 15% !important;
+}
+.flexible-modal-drag-area {
+  width: inherit !important;
+  height: 80px !important;
+  background: transparent !important;
+}
+.self-view {
+  width: 100% !important;
+  height: 451px;
+  max-width: max-content !important;
+}
+
+#self-view-video {
+  border-radius: 4px !important;
+}
+#sessionMiniContainer .self-view {
+  width: 100% !important;
+  height: 180px !important;
+  max-width: max-content !important;
+}
+@media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+  #sessionMiniContainer .self-view {
+  width: 100% !important;
+  height: 82.15px !important;
+  max-width: max-content !important;
+}
+}
+
+.user-view {
+  display: none !important;
+}
+
+.flexible-modal-drag-area-right {
+  display: none;
+}
+.flexible-modal-drag-area-left {
+  display: none !important;
+}
+
+html .mat-mdc-fab.mat-primary {
+  --mdc-fab-container-color: orange;
+  --mat-fab-foreground-color: white;
+  --mat-fab-state-layer-color: white;
+  --mat-fab-ripple-color: rgba(255, 255, 255, 0.1);
+}
+.undo-redo-buttons {
+  display: none !important;
+} 
+/**
+Excalidraw styling overrides
+**/
+
+.excalidraw .ToolIcon .ToolIcon_type_radio:checked + .ToolIcon__icon,
+.excalidraw .ToolIcon .ToolIcon_type_checkbox:checked + .ToolIcon__icon {
+  background-color: #ff8000 !important;
+}
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-right {
+  display: none !important;
+}
+.ToolIcon__icon:hover {
+  background-color: #ff8000 !important;
+}
+.ToolIcon__icon:focus {
+  background-color: #ff8000 !important;
+}
+
+.excalidraw .App-menu_top {
+  background-color: #e9e7e8;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.excalidraw .Island {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.excalidraw .ToolIcon {
+  border-left: 2px solid #d2d0d0 !important;
+  border-radius: unset !important;
+}
+
+.excalidraw .sidebar-trigger {
+  display: none !important;
+}
+
+.excalidraw .App-toolbar__divider {
+  display: none !important;
+}
+
+.excalidraw .App-menu_top {
+  grid-template-columns: 0fr 1fr 1fr !important;
+}
+
+/** dropdown button disable **/
+.excalidraw .main-menu-trigger {
+  display: none !important;
+}
+
+.excalidraw .App-menu_top {
+  position: relative;
+}
+
+.excalidraw .App-toolbar {
+  margin-left: 170px;
+}
+
+.App-toolbar--mobile {
+  margin-left: 8rem !important;
+}
+
+.excalidraw canvas {
+  margin-top: 5rem;
+}
+
+.undo-redo-buttons .ToolIcon__icon svg {
+  stroke: white;
+}
+
+/** zoom button **/
+.excalidraw .ToolIcon_type_button,
+.excalidraw .Modal .ToolIcon_type_button,
+.excalidraw .ToolIcon_type_button {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Target the zoom-out button SVG */
+.zoom-out-button .ToolIcon__icon svg {
+  stroke: white;
+}
+
+/* Target the zoom-in button SVG */
+.zoom-in-button .ToolIcon__icon svg {
+  stroke: white;
+}
+
+/* Optional: Apply a hover effect to change color on hover */
+.zoom-out-button:hover .ToolIcon__icon svg,
+.zoom-in-button:hover .ToolIcon__icon svg {
+  stroke: #f0f0f0; /* A lighter white color */
+}
+.mobileNav {
+  display: none !important;
+}
+
+.colorBarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 4rem;
+  align-items: baseline;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+
+/* Target tablets in both portrait and landscape orientation */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .whiteboard {
+    margin-top: -5px;
+  }
+  .whiteboard .shareButton {
+    left: -15px;
+    top: -10px;
+    bottom: 21rem;
+  }
+  .excalidraw--mobile {
+    background-color: #e9e7e8 !important;
+  }
+  .excalidraw .App-toolbar-content svg {
+    stroke: white;
+  }
+  .controlsUniqueContainer--right {
+    display: none;
+  }
+  .mobileHamBudger {
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    left: 15rem;
+  }
+  .excalidraw .App-toolbar-content {
+    justify-content: unset;
+  }
+  .excalidraw .App-toolbar {
+    margin-left: 14rem;
+  }
+  .colorBarContainer {
+    margin-top: 40%;
+    margin-left: 0rem;
+  }
+  .excalidraw .welcome-screen-center {
+    display: flex !important;
+  }
+  .undo-redo-buttons {
+    display: none !important;
+  } 
+  .App-toolbar--mobile {
+    margin-left: 0px !important;
+  }
+  .excalidraw .App-toolbar-content {
+    display: none !important;
+  }
+
+  .excalidraw .App-menu_top {
+    margin-top: -10px;
+  }
+}
+
+/* Target mobile devices in landscape orientation */
+@media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+  .mobileNav {
+    display: none !important;
+  }
+  .whiteboard .shareButton {
+    bottom: auto;
+  }
+  .excalidraw--mobile {
+    background-color: #e9e7e8 !important;
+  }
+  .excalidraw .App-toolbar-content svg {
+    stroke: white;
+  }
+  .controlsUniqueContainer--right {
+    display: none;
+  }
+  .color-toolbar {
+    margin-top: 10px;
+  }
+  .mobileHamBudger {
+    display: block;
+  }
+  .excalidraw .App-toolbar-content {
+    justify-content: unset;
+  }
+  .excalidraw .App-toolbar {
+    margin-left: 0px;
+  }
+  .excalidraw .welcome-screen-center {
+    display: flex !important;
+  }
+  .undo-redo-buttons {
+    display: none !important;
+  } 
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
